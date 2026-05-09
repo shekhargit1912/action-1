@@ -7,11 +7,10 @@ jobs:
         runs-on: ubuntu-latest
         steps:
         - name: welcome messages
-          run: echo "first gitctun action job
+          run: echo "first gitctun action job"
         
         - name: list files
           run: ls 
 
         - name: read the files
           run : cat README.md
-          
