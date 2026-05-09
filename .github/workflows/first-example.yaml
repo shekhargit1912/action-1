@@ -6,8 +6,8 @@ jobs:
     first_job: 
         runs-on: ubuntu-latest
         steps:
-        - name: Checkout Repo 
-          run:  actions/checkout@v4 
+        - name: Checkout
+          uses: actions/checkout@v6.0.2
 
         - name: welcome messages
           run: echo "first gitctun action job"
