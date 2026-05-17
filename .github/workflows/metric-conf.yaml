@@ -1,0 +1,25 @@
+name: Metric Configurations 
+
+on:
+  push:
+  workflow_dispatch:
+
+
+jobs:
+    deploy-on-ubuntu:
+        runs-on: ubuntu-latest
+        steps:
+        - name: Echo Docker detals
+        - run: docker info
+
+        - name: run images
+        - run: docker run hello-world
+
+    deploy-on-windows:
+        runs-on: windows-latest
+        steps:
+        - name: echod focker info
+        - run: docker info
+
+        - name: run images
+        - run: docker run hello-world
